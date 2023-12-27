@@ -56,12 +56,12 @@ The project is organized into three main modules:
       - **Serialization:** Using [Kotlin Serialization](https://github.com/Kotlin/kotlinx.serialization) for consistent data serialization.
       - **Models:** Common data models used by both the Android and iOS apps.
 
-The separation into distinct modules allows for a clear distinction between platform-specific code and shared logic. This architecture follows the principles of Kotlin Multiplatform, enabling efficient code sharing while catering to the unique requirements of each platform.
+The separation into distinct modules allows for a clear distinction between platform-specific code and shared logic. This architecture follows the principles of Kotlin Multiplatform, enabling code sharing while catering to the unique requirements of each platform.
 
 
 ## Tech Stack
 
-The Showplace app incorporates a diverse set of technologies and libraries, each playing a crucial role in its development:
+The Showplace app incorporates a diverse set of technologies and libraries:
 
 - **[Ktor](https://ktor.io/):** A versatile multiplatform HTTP client empowering efficient network communication.
   
@@ -77,9 +77,19 @@ The Showplace app incorporates a diverse set of technologies and libraries, each
   
 - **[KMP Native Coroutines](https://github.com/rickclephas/KMP-NativeCoroutines):** A library facilitating the seamless integration of Kotlin Coroutines from Swift code in KMP applications.
 
-This technology stack ensures a smooth and efficient development process while delivering a native user experience on both Android and iOS platforms.
+This tech stack ensures a smooth and efficient development process while delivering a native user experience on both Android and iOS platforms.
 
 
 ## List and Detail Screen
 ![Screenshot 2023-12-22 at 1 56 49 PM](https://github.com/GranthamAnthem/ShowPlaceAppKMP/assets/40502200/ff86f75d-b6bb-4d5b-91c7-dfecb5cc3ee0)
 ![Screenshot 2023-12-22 at 1 56 58 PM](https://github.com/GranthamAnthem/ShowPlaceAppKMP/assets/40502200/ae4f086b-c33b-4f01-9647-dd14155cd680)
+
+
+## License
+
+This project is licensed under the MIT License, making it open for contributions and use.
+
+
+## Contributing
+
+If you'd like to contribute to Showplace, please send me a message.
