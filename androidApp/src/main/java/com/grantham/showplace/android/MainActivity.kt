@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.grantham.showplace.android.navigation.ShowPlaceNavHost
+import org.koin.compose.KoinContext
 import org.koin.core.component.KoinComponent
 
 class MainActivity : ComponentActivity(), KoinComponent {
@@ -15,11 +16,13 @@ class MainActivity : ComponentActivity(), KoinComponent {
 
         setContent {
             MyApplicationTheme {
-                val navController = rememberNavController()
-                ShowPlaceNavHost(
-                    navController = navController,
-                    modifier = Modifier,
-                )
+                KoinContext() {
+                    val navController = rememberNavController()
+                    ShowPlaceNavHost(
+                        navController = navController,
+                        modifier = Modifier,
+                    )
+                }
             }
         }
     }

@@ -17,7 +17,7 @@ class ShowService(
     @NativeCoroutines
     suspend fun getShow(id: String): ShowDTO {
         log.d { "Fetching Show id $id from network" }
-        return client.get(Constants().SHOW) {
+        return client.get(Constants.SHOW) {
             parameter("id", id)
         }.body()
     }
@@ -25,6 +25,6 @@ class ShowService(
     @NativeCoroutines
     suspend fun getShows(): List<ShowDTO> {
         log.d { "Fetching Shows from network" }
-        return client.get(Constants().SHOWS).body()
+        return client.get(Constants.SHOWS).body()
     }
 }

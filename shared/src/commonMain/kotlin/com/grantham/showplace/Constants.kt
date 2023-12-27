@@ -1,6 +1,8 @@
 package com.grantham.showplace
 
-class Constants {
+object Constants {
+    val BASE_URL = "http://showplaceservicesmain-env.eba-ykg2gwm2.us-east-1.elasticbeanstalk.com"
+
     val BAND = "$BASE_URL/band"
     val BANDS = "$BASE_URL/bands"
 

@@ -14,13 +14,13 @@ class VenueService(
 
     @NativeCoroutines
     suspend fun getVenue(id: String): Venue {
-        return client.get(Constants().VENUE) {
+        return client.get(Constants.VENUE) {
             parameter("id", id)
         }.body()
     }
 
     @NativeCoroutines
     suspend fun getVenues(): List<Venue> {
-        return client.get(Constants().VENUES).body()
+        return client.get(Constants.VENUES).body()
     }
 }

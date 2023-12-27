@@ -9,8 +9,6 @@ import kotlinx.datetime.todayIn
 import org.koin.core.Koin
 import org.koin.core.parameter.parametersOf
 
-actual val BASE_URL = "http://127.0.0.1:8080"
-
 actual val showPreview = Show(
     id = "5",
     lineup = "Metal, Fun Name, Great Band",

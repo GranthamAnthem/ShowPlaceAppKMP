@@ -14,13 +14,13 @@ class BandService(
 
     @NativeCoroutines
     suspend fun getBand(id: Int): Band {
-        return client.get(Constants().BAND) {
+        return client.get(Constants.BAND) {
             parameter("id", id)
         }.body()
     }
 
     @NativeCoroutines
     suspend fun getBands(): List<Band> {
-        return client.get(Constants().BANDS).body()
+        return client.get(Constants.BANDS).body()
     }
 }
